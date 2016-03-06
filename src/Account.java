@@ -28,6 +28,11 @@ public class Account {
             balance = balance + depositAmount;
         }
     }
+    public void withDrawal(double withDrawalAmount){
+        if(withDrawalAmount<=balance){
+            balance = balance - withDrawalAmount;
+        }
+    }
 
     public double getBalance(){
         return balance;
